@@ -9,7 +9,7 @@ import '@chainlink/contracts/src/v0.8/ConfirmedOwner.sol';
  * Find information on LINK Token Contracts and get the latest ETH and LINK faucets here: https://docs.chain.link/docs/link-token-contracts/
  */
 
-contract Oracle is IOracle, ChainlinkClient, ConfirmedOwner {
+contract Oracle is ChainlinkClient, ConfirmedOwner {
     using Chainlink for Chainlink.Request;
 
     uint256 private _rate;
