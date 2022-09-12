@@ -57,7 +57,7 @@ contract Oracle is ChainlinkClient, ConfirmedOwner {
         _rate = rate_;
     }
 
-    function rate() public override view returns(uint256) {
+    function rate() public view returns(uint256) {
         return _rate;
     }
 
@@ -69,7 +69,7 @@ contract Oracle is ChainlinkClient, ConfirmedOwner {
         return _reqURL;
     }
 
-    function decimals() public override view returns(uint256) {
+    function decimals() public view returns(uint256) {
         return _decimals;
     }
 }
