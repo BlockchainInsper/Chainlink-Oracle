@@ -23,16 +23,15 @@ contract Oracle is ChainlinkClient, ConfirmedOwner {
     /**
      * @notice Initialize the link token and target oracle
      *
-     * Rinkeby Testnet details:
-     * Link Token: 0x01BE23585060835E02B77ef475b0Cc51aA1e0709
-     * Oracle: 0xf3FBB7f3391F62C8fe53f89B41dFC8159EE9653f (Chainlink DevRel)
+     * Goerli Testnet details:
+     * Link Token: 0x326C977E6efc84E512bB9C30f76E30c160eD06FB
+     * Oracle: 0xCC79157eb46F5624204f47AB42b3906cAA40eaB7 (Chainlink DevRel)
      * _jobId: ca98366cc7314957b8c012c72f05aeeb
      *
      */
-
     constructor(string memory reqURL_, string memory path_, uint256 decimals_) ConfirmedOwner(msg.sender) {
-        setChainlinkToken(0x01BE23585060835E02B77ef475b0Cc51aA1e0709);
-        setChainlinkOracle(0xf3FBB7f3391F62C8fe53f89B41dFC8159EE9653f);
+        setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
+        setChainlinkOracle(0xCC79157eb46F5624204f47AB42b3906cAA40eaB7);
 
         _decimals = decimals_;
         _reqURL = reqURL_;
